@@ -31,7 +31,6 @@ h5{
 img{
     max-width: 50%;
     height: auto;
-    display: block;
     margin-bottom: 1px;
 }
 #pic{
@@ -94,7 +93,7 @@ li {list-style-type: none;}
 }
 #s1 table tr td
 {
-    min-width: 200px;
+    width: 200px;
     padding-left: 3%;
 }
 .tiny{
@@ -130,6 +129,11 @@ footer p{
         flex-direction: column;
     }
     header div{
+        flex-basis: 100%;
+        text-align: center;
+        margin-right: 0%;
+    }
+    header div{
         flex-basis: auto;
         text-align: center;
     }
@@ -149,6 +153,11 @@ footer p{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+    }
+    #s1 table tr td
+    {
+        min-width: 0px;
+        padding-left: 3%;
     }
 }
 
