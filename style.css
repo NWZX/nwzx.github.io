@@ -1,0 +1,177 @@
+body{
+    max-width: 800px;
+    margin: auto;
+    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+}
+i{
+    padding-right: 10px;
+}
+
+/* Title */
+h1{
+    font-weight: normal;
+    font-size: 36px;
+    margin-bottom: 1px;
+}
+h2{
+    font-size: 36px;
+    margin-top: 1px;
+}
+h3{
+    padding-left: 2%;
+    font-weight: normal;
+    letter-spacing: 6px;
+}
+h5{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* Profile picture */
+img{
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-bottom: 1px;
+}
+#pic{
+    text-align: left;
+}
+
+/* Header */
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+header div{
+    flex-basis: 75%;
+    text-align: right;
+    margin-right: 5%;
+}
+
+/* Partie 2*/
+#p2{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-top: 1px solid #212121;
+    border-bottom: 1px solid #212121;
+}
+#p2 aside{
+    flex-basis: 75%;
+    text-align: center;
+    padding-right: 3%;
+}
+#info{
+    text-align: left;
+}
+
+/* Part 4*/
+#p4{
+    display: flex;
+}
+#p4 div{
+    flex-basis: 75%;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+li {list-style-type: none;}
+
+/*Partie 5*/
+#p5{
+    display: flex;
+}
+#p5 div{
+    flex-basis: 60%;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+/* Section 1*/
+#s1 table{
+    padding-left: 3%;
+}
+#s1 table tr td
+{
+    min-width: 200px;
+    padding-left: 3%;
+}
+.tiny{
+    font-style: italic;
+    font-size: smaller;
+}
+
+/* Section 2*/
+#s2{
+    border-top: 1px solid #212121;
+}
+
+/* Section 3*/
+#s3{
+    border-top: 1px solid #212121;
+}
+
+/* Footer */
+footer{
+    border-top: 1px solid #212121;
+}
+footer p{
+    text-align: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px)
+{
+    body{
+        border: 0px;
+    }
+    header{
+        flex-direction: column;
+    }
+    header div{
+        flex-basis: auto;
+        text-align: center;
+    }
+    #pic{
+        text-align: center;
+    }
+    #p2{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #p4{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #p5{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+/*For Printer*/
+
+@media print {
+
+    @page {size: portait; }
+    body{
+        page-break-inside: avoid;
+    }
+
+    img { max-width: 35%;}
+    h4{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    p{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    ul{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+}
