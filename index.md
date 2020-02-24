@@ -67,7 +67,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Fév. 2017 - Juin. 2019<br /><span class="tiny">Fort-de-France, France</span></td>
+                    <td>Sept. 2017 - Juin. 2019<br /><span class="tiny">Fort-de-France, France</span></td>
                     <td><strong>CPGE technologie et sciences industrielles</strong><br /><em>Lycée Joseph Gaillard</em>
                     </td>
                 </tr>
