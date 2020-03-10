@@ -1,5 +1,4 @@
 body{
-    /*max-width: 1190px;*/
     margin: auto;
     font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
     color: #4A4A4A;
@@ -29,25 +28,27 @@ i{
     margin-right: 10px;
     color: #FECA07;
 }
-li {list-style-type: none;}
-#lat{
+li {
+    list-style-type: none;
+}
+
+.menu{
     background-color: #FECA07;
     padding: 0;
 }
-#pic{
+.pic{
     text-align: center;
     padding: 10%;
 }
-#pic img{
+.pic img{
     width: 224px;
     height: 224px;
 }
-#short-line{
+.short-line{
     margin-bottom: 20%;
     border-bottom: 1px solid #FECA07;
     margin-right: 90%;
 }
-
 .name-color{
     color: #FECA07;
 }
@@ -67,10 +68,18 @@ li {list-style-type: none;}
 .nav-tab tr td{
     padding: 15px;
 }
+.low{
+    padding-bottom: 120%;
+}
 
 @media (min-width: 768px)
 {
     .offset-md-1 {
         margin-left: 5.333333%;
+    }
+}
+@media (max-width: 992px) {
+    .low{
+        padding-bottom: 0%;
     }
 }
