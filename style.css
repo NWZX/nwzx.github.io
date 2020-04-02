@@ -9,8 +9,23 @@ nav p
 }
 
 h1{
-    margin-top: 20%;
+    margin-top: 15%;
     font-size: 52px;
+}
+h2{
+    margin: 0 0 15%;
+    padding: 0 0 10px;
+    position: relative;
+}
+h2::after{
+    background-color: #FECA07; 
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 8%;
 }
 h3{
     border-bottom: 2px solid #FECA07;
@@ -31,6 +46,9 @@ i{
 li {
     list-style-type: none;
 }
+.fa-ul li{
+    padding: 2%;
+}
 a:link{
     text-decoration: none;
     color: #404040;
@@ -40,22 +58,23 @@ a:visited{
     color: #404040;
 }
 
-.menu{
+.menu-up{
+    background-color: #FECA07;
+    padding: 0;
+    display: flex;
+}
+.menu-down{
     background-color: #FECA07;
     padding: 0;
 }
 .pic{
     text-align: center;
-    padding: 10%;
+    margin: auto;
+    padding: 2%;
 }
 .pic img{
-    width: 224px;
-    height: 224px;
-}
-.short-line{
-    margin-bottom: 20%;
-    border-bottom: 2px solid #FECA07;
-    margin-right: 90%;
+    width: 336px;
+    height: 336px;
 }
 .name-color{
     color: #FECA07;
@@ -75,11 +94,13 @@ a:visited{
     padding: 15px;
 }
 .low{
-    padding-bottom: 120%;
+    padding: 5%;
+    padding-bottom: 50%;
 }
 .big-strong{
     font-size: x-large;
     color: #4A4A4A;
+    font-weight: bold;
 }
 
 @media (min-width: 768px)
@@ -91,5 +112,13 @@ a:visited{
 @media (max-width: 992px) {
     .low{
         padding-bottom: 0%;
+    }
+    .order-0{
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    .order-1{
+        -ms-flex-order: 0;
+        order: 0;
     }
 }
